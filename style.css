@@ -104,12 +104,11 @@ header nav ul li a:hover {
 }
 
 header nav ul li a::before {
-    content: '| ';
+    content: '|';
 }
 
 header nav ul li a::before:hover {
     content: '|';
-    display: contents;
 }
 
 
@@ -118,10 +117,18 @@ header nav ul li a::before:hover {
 main {
     grid-area: main;
     padding: 25px;
+    display: grid;
+    grid-template-columns: 95% 5%;
+    grid-template-rows: auto;
+    grid-template-areas: "article social";
 }
 
 .social_icons {
     grid-area: social;
+}
+
+.main-article {
+    grid-area: article;
 }
 
 main > nav > ul > li {
