@@ -1,7 +1,7 @@
 /* h1 Montserrat, h2-h6 Lora and p Hind Madurai */
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Lora:ital@1&family=Montserrat:wght@700&display=swap');
 
-/* normalize */
+/* reset*/
 
 * {
     margin: 0;
@@ -12,13 +12,15 @@ body {
     font-family: 'Hind Madurai', sans-serif;
     font-weight: 300;
     font-size: 14px;
+    width: 1240px;
+    margin: 0 auto;
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 4.625em;
     font-weight: 700;
-    line-height: 3.5em;
+    line-height: 1.35em;
 }
 
 h2, h3, h4, h5, h6 {
