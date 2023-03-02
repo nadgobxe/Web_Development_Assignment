@@ -8,6 +8,11 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #040303;
+}
+
 body {
     font-family: 'Hind Madurai', sans-serif;
     background-color: #EEF0F2;
@@ -52,11 +57,12 @@ p {
     font-size: 1.125em;
     line-height: 1.75em;
 }
-
+/* Header Settings */
 header {
     grid-area: header;
     padding: 25px;
     display: grid;
+    border-bottom: 1px dashed #cccccc;
     grid-template-columns: 30% 70%;
     grid-template-rows: auto;
     grid-template-areas: "logo nav";
@@ -65,7 +71,7 @@ header {
 .logo > h1 {
     font-size: 2.3125em;
 }
-/* Nav Settings */
+
 header > nav {
     grid-area: nav;
 
@@ -81,26 +87,48 @@ header > nav > ul {
     grid-area: logo;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
 }
 
-nav ul li a {
-    text-decoration: none;
+header nav ul li a {
+    text-decoration: none; 
     font-size: 1.1em;
     margin-right:25px;
+    font-weight: 500;
 }
 
-/* End Nav Setting */
+header nav ul li a:hover {
+    color: #ffc800;
+    text-decoration: overline;
+}
+
+header nav ul li a::before {
+    content: '| ';
+}
+
+header nav ul li a::before:hover {
+    content: '|';
+    display: contents;
+}
+
+
+/* End Header Setting */
+/* Main Settings */
+main {
+    grid-area: main;
+    padding: 25px;
+}
 
 .social_icons {
     grid-area: social;
 }
 
-main {
-    grid-area: main;
+main > nav > ul > li {
+    display: block;
+    list-style: none;
 }
-
+/* End Main Settings */
 aside {
     grid-area: aside;
 }
