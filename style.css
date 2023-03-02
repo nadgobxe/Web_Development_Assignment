@@ -10,7 +10,8 @@
 
 body {
     font-family: 'Hind Madurai', sans-serif;
-    background-color: #EEf0f2;
+    background-color: #EEF0F2;
+    color: #040303;
     font-weight: 300;
     font-size: 14px;
     width: 1240px;
@@ -51,6 +52,10 @@ p {
 
 header {
     grid-area: header;
+}
+
+header > h1 {
+    font-size: 2.3125em;
 }
 
 nav {
