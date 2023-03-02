@@ -16,20 +16,21 @@ body {
     font-size: 14px;
     width: 1240px;
     margin: 0 auto;
+    padding: 25px;
     display: grid;
-    grid-template-columns: 10% 55% 35%;
+    grid-template-columns: 10% 45% 10% 35%;
     grid-template-rows: auto;
     grid-template-areas: 
-    "header header nav"
-    "social main aside"
-    ". main aside"
-    ". . ."
-    "footer footer footer"
+    "header header nav nav"
+    "social main aside aside"
+    ". main aside aside"
+    ". . . ."
+    "footer footer footer footer"
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 4.625em;
+    font-size: 3.625em;
     font-weight: 700;
     line-height: 1.35em;
 }
@@ -42,7 +43,7 @@ h2, h3, h4, h5, h6 {
 
 h2 {
     font-size: 2.1875em;
-    line-height: 2.625em;
+    line-height: 2.125em;
 }
 
 p {
@@ -57,11 +58,23 @@ header {
 header > h1 {
     font-size: 2.3125em;
 }
-
+/* Nav Settings */
 nav {
     grid-area: nav;
 
 }
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-right:25px;
+}
+
+/* End Nav Setting */
 
 .social_icons {
     grid-area: social;
@@ -79,6 +92,3 @@ footer {
     grid-area: footer;
 }
 
-nav ul li {
-    display: inline;
-}
