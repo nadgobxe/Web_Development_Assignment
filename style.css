@@ -129,6 +129,10 @@ main {
 
 .main-article {
     grid-area: article;
+    background-image: url('/img/SVG/Asset\ 1.svg');
+    background-position: right 0% bottom 45%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 main > nav > ul > li {
