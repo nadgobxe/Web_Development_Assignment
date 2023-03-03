@@ -129,12 +129,19 @@ main {
 
 .main-article {
     grid-area: article;
-    background-image: url('/img/SVG/Asset\ 1.svg');
+    background-image: url('/img/SVG/Asset\ 1.svg'); /*source freepik.com */
     background-position: right 0% bottom 45%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 27.5%;
 }
 
+main > article > * {
+    width: 80%;
+}
+
+main > article > *:last-child {
+    width: auto;
+}
 main > nav > ul > li {
     display: block;
     list-style: none;
