@@ -18,7 +18,7 @@ body {
     background-color: #EEF0F2;
     color: #040303;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     width: 80vw;
     margin: 25px auto;
     padding: 25px;
@@ -111,7 +111,6 @@ header nav ul li a::before:hover {
     content: '|';
 }
 
-
 /* End Header Setting */
 /* Main Settings */
 main {
@@ -146,6 +145,7 @@ main > nav > ul > li {
     display: block;
     list-style: none;
 }
+
 /* End Main Settings */
 aside {
     grid-area: aside;
