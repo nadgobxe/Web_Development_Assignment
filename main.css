@@ -23,16 +23,7 @@ body {
     margin: 25px auto;
     padding: 25px;
     box-shadow: -1px -9px 30px 0px #0403033d;
-    border-radius: 25px;
-    display: grid;
-    grid-template-columns: 17% 66% 17%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "aside aside aside"
-    "footer footer footer";
-    
+    border-radius: 25px; 
 }
 
 h1 {
@@ -59,13 +50,8 @@ p {
 }
 /* Header Settings */
 header {
-    grid-area: header;
     padding: 25px;
-    display: grid;
     border-bottom: 1px dashed #cccccc;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: auto;
-    grid-template-areas: "logo nav";
 }
 
 .logo > h1 {
@@ -100,16 +86,13 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: #ffc800;
-    text-decoration: overline;
+    text-decoration: underline;
 }
 
 header nav ul li a::before {
-    content: '|';
+    content: '+';
 }
 
-header nav ul li a::before:hover {
-    content: '|';
-}
 
 /* End Header Setting */
 /* Main Settings */
