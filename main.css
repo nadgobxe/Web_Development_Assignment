@@ -63,19 +63,10 @@ header > nav {
 
 }
 
-header > nav > ul {
-    display: flex;
-    justify-content: flex-end;
-
-}
-
 .logo {
     grid-area: logo;
 }
 
-header nav ul li {
-    display: inline;
-}
 
 header nav ul li a {
     text-decoration: none; 

@@ -11,14 +11,14 @@
 
 /* header setting */
 
-header {
+/* header {
     grid-area: header;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "logo"
     "nav";
-}
+} */
 
 .showNav {
     height: 0.8em;
@@ -29,6 +29,7 @@ header {
     border-radius: 0.25em;
 }
 
+
 .showNav::before {
     content: '';
     position: absolute;
@@ -36,3 +37,44 @@ header {
     margin-top: 0.3em;
     border-top: 0.2em solid gray;
 }
+
+header > nav {
+    display: none;
+    background-color: #EEF0F2;
+    position: fixed;
+    top:0;
+    left:50%;
+    width: 50%;
+    height: 100vh;
+    padding: 25px;
+
+}
+
+
+header nav ul li {
+    display: block;
+}
+
+/* toogle on/off */
+
+#clicked .on {
+    display: block;
+}
+
+#clicked .off {
+    display: none;
+}
+
+#clicked:target .on {
+    display: none;
+}
+
+#clicked:target .off {
+    display: block;
+}
+
+#clicked:target nav {
+    display: block;
+}
+
+/* end toogle on/off */

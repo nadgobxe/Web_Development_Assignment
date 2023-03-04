@@ -9,7 +9,7 @@
     "footer footer footer";
     
 } */
-
+/* header setting */
 header {
 
 grid-area: header;
@@ -19,3 +19,16 @@ grid-template-rows: auto;
 grid-template-areas: "logo nav";
 
 }
+
+
+header > nav > ul {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+header nav ul li {
+    display: inline;
+}
+
+/* header settings */
