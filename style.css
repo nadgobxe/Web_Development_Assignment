@@ -120,26 +120,26 @@ main {
     display: grid;
     grid-template-columns: 95% 5%;
     grid-template-rows: auto;
-    grid-template-areas: "article social";
+    grid-template-areas: "section social";
 }
 
 .social_icons {
     grid-area: social;
 }
 
-.main-article {
-    grid-area: article;
+.main-section {
+    grid-area: section;
     background-image: url('/img/SVG/Asset\ 1.svg'); /*source freepik.com */
     background-position: right 0% bottom 45%;
     background-repeat: no-repeat;
     background-size: 27.5%;
 }
 
-main > article > * {
+main > section > * {
     width: 80%;
 }
 
-main > article > *:last-child {
+main > section > *:last-child {
     width: auto;
 }
 main > nav > ul > li {
@@ -149,6 +149,9 @@ main > nav > ul > li {
 /* End Main Settings */
 aside {
     grid-area: aside;
+}
+aside > p > i {
+    margin: 0 5px 0 5px;
 }
 
 footer {
