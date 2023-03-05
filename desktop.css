@@ -10,6 +10,12 @@
     
 } */
 /* header setting */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
 
 grid-area: header;
@@ -32,3 +38,32 @@ header nav ul li {
 }
 
 /* header settings */
+
+
+/* hide x */
+
+header > a {
+    display: none;
+}
+
+nav > ul > li {
+    position: relative;
+}
+
+nav ul ul {
+    position: absolute;
+    display: none;
+    background-color: azure;
+    padding: 5px;
+    width: 100%;
+    opacity: 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+    opacity: 1;
+}
+
+nav ul li:hover ul li:hover {
+    background-color: bisque;
+}

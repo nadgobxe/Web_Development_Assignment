@@ -78,3 +78,10 @@ header nav ul li {
 }
 
 /* end toogle on/off */
+
+
+/* Increas X in size */
+
+.off a {
+    font-size: 1.3em;
+}
