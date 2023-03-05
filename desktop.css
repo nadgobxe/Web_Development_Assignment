@@ -37,7 +37,7 @@ header nav ul li {
 
 /* hide x */
 
-header > a {
+.hamburger {
   display: none;
 }
 
@@ -82,3 +82,4 @@ nav > ul > li:hover ul {
   transform: none;
   z-index: 1;
 }
+
