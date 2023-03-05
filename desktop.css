@@ -92,3 +92,17 @@ main {
   grid-template-areas: "section social";
 }
 
+main > section > * {
+  width: 80%;
+}
+
+main > section > *:last-child {
+  width: auto;
+}
+
+footer {
+  grid-template-columns: 20% 20% 60%;
+  grid-template-rows: auto;
+  grid-template-areas: "logo copy footer-menu";
+  padding: 10px;
+}
