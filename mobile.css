@@ -17,8 +17,11 @@ header {
     grid-template-columns: 75% 25%;
     grid-template-rows: auto;
     grid-template-areas: "logo toggle"
-    "nav nav";
-    justify-items: end;
+    "nav nav"
+    "main main"
+    "aside aside"
+    "footer footer";
+    justify-items: stretch;
     align-items: center;
 }
 
@@ -99,4 +102,38 @@ header nav ul li a {
 .hamburger {
     grid-area: toggle;
     z-index: 2; /* fix X close Button */
+    justify-content: end;
+    position: relative;
+    display: grid;
 }
+
+header > div.logo {
+    text-align: start;
+} 
+
+
+main {
+    grid-area: main;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "section"
+    "social";
+  }
+
+  .social_icons > ul > li {
+    display: inline;
+  }
+
+ main > section > h1 {
+    font-size: 1.5em;
+ }
+
+ main > section > h2 {
+    font-size: 1.25em;
+ }
+
+ main > section > p {
+    font-size: 1em;
+ }

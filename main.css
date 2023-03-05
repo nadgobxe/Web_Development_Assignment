@@ -88,17 +88,16 @@ header nav ul li a:hover {
 
 /* End Header Setting */
 /* Main Settings */
-main {
-  grid-area: main;
-  padding: 25px;
-  display: grid;
-  grid-template-columns: 95% 5%;
-  grid-template-rows: auto;
-  grid-template-areas: "section social";
-}
 
 .social_icons {
   grid-area: social;
+}
+
+/* font awesome settings */
+
+main > nav > ul > li > a > i {
+  font-size: 3em;
+  padding: 5px;;
 }
 
 .main-section {
