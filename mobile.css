@@ -47,19 +47,19 @@ header {
 /*mobile menu */
 
 header  nav { /* default state: hidden */
-    display: none;
-    background-color: #EEF0F2;
+    /* display: none; */
     width: 100%;
-    height: auto;
+    max-height: 0;
     background-color: chocolate;
     z-index: 1; /* fix for social icons menu */
-    transform: translate(150%, 0`);
-    transition: transform 0.5s ease-in;
+    transform: translate(150%, 0);
+    transition: transform 500ms ease-in, max-height 1000ms ease-in-out;
 
 }
 
 #clicked:target nav { /* when hambruger click show header > nav */
     display: block;
+    max-height: 1000px;
     transform: translate(0,0);
 }
 
