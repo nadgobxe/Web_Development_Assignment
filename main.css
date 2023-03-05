@@ -80,9 +80,9 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-header nav ul li a::before {
+/* header nav ul li a::before {
     content: '+';
-}
+} */
 
 
 /* End Header Setting */
