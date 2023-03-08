@@ -1,17 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <link rel="stylesheet" href="test.css" />
     <title>Document</title>
-</head>
-<body>
-    <form action="mailto:bogdan.burcea22@my.northampton.ac.uk?subject=Contact" method="get">
-        <input type="text" name="subject" id="subject" placeholder="please add your subject line...">
-        <textarea name="body" id="body" placeholder="please add your message..."></textarea>
-        <input type="submit" value="Submit">
-    </form>
+  </head>
+  <body>
+    <!-- <form
+      action="mailto:bogdan.burcea22@my.northampton.ac.uk?subject=Contact"
+      method="get"
+    >
+      <label for="subject">Enter your Subject Line</label>
+      <input
+        type="text"
+        name="subject"
+        id="subject"
+        placeholder="please add your subject line..."
+      />
+      <textarea
+        name="body"
+        id="body"
+        placeholder="please add your message..."
+      ></textarea>
+      <input type="submit" value="Submit" />
+    </form> -->
 
-</body>
-</html> 
+    <!--
+       Exercise 1 
+    -->
+    <form action="#" method="get">
+      <label for="userInput">Username</label>
+      <input
+        type="text"
+        name="userInput"
+        id="userInput"
+        placeholder="Please insert your username..."
+      />
+      <label for="userPassword">Password</label>
+      <input
+        type="password"
+        name="userPassword"
+        id="userPassword"
+        placeholder="Please insert your pass..."
+      />
+      <label for="emailUser">Email</label>
+      <input
+        type="email"
+        name="emailUser"
+        id="emailUser"
+        placeholder="Please insert your email..."
+      />
+      <select name="countryUser" id="countryUser" class="selectCountry">
+        <option value="Ger">Germany</option>
+        <option value="USA">Usa</option>
+        <option value="Fra">France</option>
+        <option value="theUK" selected="select">the UK</option>
+        <option value="Swe">Sweden</option>
+      </select>
+      <label for="userState">Accept T&C's?</label>
+      <input type="checkbox" name="userState" id="userState" />
+      <input type="submit" value="Submit" class="submitArea" />
+    </form>
+  </body>
+</html>
