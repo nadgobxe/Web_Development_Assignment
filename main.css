@@ -97,15 +97,11 @@ header nav ul li a:hover {
 
 main > nav > ul > li > a > i {
   font-size: 3em;
-  padding: 5px;;
+  padding: 5px;
 }
 
-.main-section {
+main > section  {
   grid-area: section;
-  background-image: url("/img/SVG/Asset\ 1.svg"); /*source freepik.com */
-  background-position: right 0% bottom 45%;
-  background-repeat: no-repeat;
-  background-size: 27.5%;
 }
 
 main > nav > ul > li {
@@ -144,7 +140,7 @@ footer > nav > ul > li {
   margin-right: 5px;
 }
 
-button {
+.button {
   padding: 10px;
   margin: 10px;
   font-size: 1.1em;
@@ -152,4 +148,5 @@ button {
   box-shadow: 0 10px 30px #04030321;
   cursor: pointer;
   border: 2px solid #040303;
+  border-radius: 15px;
 }
