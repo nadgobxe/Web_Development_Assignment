@@ -14,12 +14,12 @@
 header {
   grid-area: header;
   display: grid;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 50% 25% 25%;
   grid-template-rows: auto;
   grid-template-areas:
     "logo button toggle"
     "nav nav nav";
-  justify-items: stretch;
+  justify-items: end;
   align-items: center;
 }
 
@@ -28,8 +28,8 @@ header {
   height: 0.8em;
   width: 1.25em;
   display: block;
-  border-top: 0.2em solid gray;
-  border-bottom: 0.2em solid gray;
+  border-top: 0.2em solid #808080;
+  border-bottom: 0.2em solid #808080;
   border-radius: 0.15em;
 }
 
@@ -39,7 +39,7 @@ header {
   position: absolute;
   width: 1.25em;
   margin-top: 0.3em;
-  border-top: 0.2em solid gray;
+  border-top: 0.2em solid #808080;
 }
 
 /*end hamburger button */
@@ -51,10 +51,14 @@ header nav {
   /* display: none; */
   width: 100%;
   max-height: 0;
-  background-color: chocolate;
+  background-color: #ffffff;
   z-index: 1; /* fix for social icons menu */
   transform: translate(150%, 0);
   transition: transform 500ms ease-in, max-height 1000ms ease-in-out;
+  border: 1px solid #eef0f2;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 10px 30px #04030321;
 }
 
 #clicked:target nav {
@@ -95,7 +99,7 @@ header nav ul li a {
   display: block; /* Show the X */
   z-index: 2;
   font-weight: 800;
-  color: chocolate;
+  color: #808080;
   font-size: 2em;
 }
 /* end toggle on/off */
@@ -112,55 +116,24 @@ header > div.logo {
   text-align: start;
 }
 .button-mobile {
-    grid-area: button;
-  }
-  
-  .button-desktop {
-    display: none; /* hide desktop buttons */
-  }
-  
-  /* end header settings */
-
-
-main {
-  grid-area: main;
-  padding: 25px;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "section"
-    "img"
-    "contact"
-    "social";
-  grid-gap: 1em;
-  justify-items: center;
+  grid-area: button;
 }
 
-.social_icons > ul > li {
+.button-desktop {
+  display: none; /* hide desktop buttons */
+}
+
+div.button-mobile > a > i {
+  font-size: 2em;
+  box-shadow: 0 10px 30px #04030321;
+  margin-left: 0.2em;
+}
+
+header > nav > ul > li > a:hover {
+  border-bottom: 5px dashed #040303;
+  text-decoration: none;
   display: inline;
+  color: #ffc800;
 }
 
-main > section > h1 {
-  font-size: 1.5em;
-}
-
-main > section > h2 {
-  font-size: 1.25em;
-}
-
-main > section > p {
-  font-size: 1em;
-}
-
-footer {
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas: "logo" "copy" "footer-menu";
-  justify-items: center;
-  padding: 10px;
-}
-
-footer * {
-  margin-bottom: 5px;
-}
+/* end header settings */
