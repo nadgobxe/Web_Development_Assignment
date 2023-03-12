@@ -56,9 +56,10 @@ p {
 header {
   padding: 25px;
   border-bottom: 1px dashed #cccccc;
+  display: grid;
 }
 
-.logo > h1 {
+header > aside.logo > p > a {
   font-size: 2.3125em;
 }
 
@@ -81,10 +82,6 @@ header nav ul li a:hover {
   color: #ffc800;
   text-decoration: underline;
 }
-
-/* header nav ul li a::before {
-    content: '+';
-} */
 
 /* End Header Setting */
 /* Main Settings */
@@ -149,14 +146,22 @@ footer > nav > ul > li {
 }
 
 .button {
-  padding: 10px;
-  margin: 10px;
-  font-size: 1.1em;
+  padding: 0.625em;
+  margin: 0.625em;
+  font-size: 0.925em;
   font-family: "Montserrat", sans-serif;
   box-shadow: 0 10px 30px #04030321;
   cursor: pointer;
   border: 2px solid #040303;
-  border-radius: 15px;
+  border-radius: 1em;
+  transition: all 900ms ease-in;
+  display: inline-block;
+  white-space: nowrap; /* Source: StackOver Flow button cutting in half while decreasing the screen size */
+}
+
+.button:hover {
+  background-color: #040303;
+  color: #ffffff;
 }
 
 .heightImg {

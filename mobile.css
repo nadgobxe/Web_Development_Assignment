@@ -14,14 +14,11 @@
 header {
   grid-area: header;
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 25% 50% 25%;
   grid-template-rows: auto;
   grid-template-areas:
-    "logo toggle"
-    "nav nav"
-    "main main"
-    "aside aside"
-    "footer footer";
+    "logo button toggle"
+    "nav nav nav";
   justify-items: stretch;
   align-items: center;
 }
@@ -114,6 +111,16 @@ header nav ul li a {
 header > div.logo {
   text-align: start;
 }
+.button-mobile {
+    grid-area: button;
+  }
+  
+  .button-desktop {
+    display: none; /* hide desktop buttons */
+  }
+  
+  /* end header settings */
+
 
 main {
   grid-area: main;
