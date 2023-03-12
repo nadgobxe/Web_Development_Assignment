@@ -100,13 +100,21 @@ main > nav > ul > li > a > i {
   padding: 5px;
 }
 
-main > section  {
+main > section {
   grid-area: section;
 }
 
 main > nav > ul > li {
   display: block;
   list-style: none;
+}
+
+main > section:nth-child(3) {
+  grid-area: img;
+}
+
+main > *:last-child {
+  grid-area: contact;
 }
 
 /* End Main Settings */

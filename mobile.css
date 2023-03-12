@@ -12,140 +12,148 @@
 /* header setting */
 
 header {
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: auto;
-    grid-template-areas: "logo toggle"
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "logo toggle"
     "nav nav"
     "main main"
     "aside aside"
     "footer footer";
-    justify-items: stretch;
-    align-items: center;
+  justify-items: stretch;
+  align-items: center;
 }
 
 /* Hamburger Button */
 .showNav {
-    height: 0.8em;
-    width: 1.25em;
-    display: block;
-    border-top: 0.2em solid gray;
-    border-bottom: 0.2em solid gray;
-    border-radius: 0.15em;
-    
+  height: 0.8em;
+  width: 1.25em;
+  display: block;
+  border-top: 0.2em solid gray;
+  border-bottom: 0.2em solid gray;
+  border-radius: 0.15em;
 }
 
 /*Middle Line*/
 .showNav::before {
-    content: '';
-    position: absolute;
-    width: 1.25em;
-    margin-top: 0.3em;
-    border-top: 0.2em solid gray;
+  content: "";
+  position: absolute;
+  width: 1.25em;
+  margin-top: 0.3em;
+  border-top: 0.2em solid gray;
 }
 
 /*end hamburger button */
 
 /*mobile menu */
 
-header  nav { /* default state: hidden */
-    /* display: none; */
-    width: 100%;
-    max-height: 0;
-    background-color: chocolate;
-    z-index: 1; /* fix for social icons menu */
-    transform: translate(150%, 0);
-    transition: transform 500ms ease-in, max-height 1000ms ease-in-out;
-
+header nav {
+  /* default state: hidden */
+  /* display: none; */
+  width: 100%;
+  max-height: 0;
+  background-color: chocolate;
+  z-index: 1; /* fix for social icons menu */
+  transform: translate(150%, 0);
+  transition: transform 500ms ease-in, max-height 1000ms ease-in-out;
 }
 
-#clicked:target nav { /* when hambruger click show header > nav */
-    display: block;
-    max-height: 1000px;
-    transform: translate(0,0);
+#clicked:target nav {
+  /* when hambruger click show header > nav */
+  display: block;
+  max-height: 1000px;
+  transform: translate(0, 0);
 }
 
- header nav ul li {
-    list-style: none;
-    /* border-bottom:1px solid #EEF0F2; */
+header nav ul li {
+  list-style: none;
+  /* border-bottom:1px solid #EEF0F2; */
 }
 
 header nav ul li a {
-    border-bottom:1px solid #EEF0F2;
-    display: block;
+  border-bottom: 1px solid #eef0f2;
+  display: block;
 }
 
 /* toggle on/off */
 
-#clicked .on { /* hamburger menu default state: visible */
-    display: block;
+#clicked .on {
+  /* hamburger menu default state: visible */
+  display: block;
 }
 
-#clicked .off { /* X men default state: hidden */
-    display: none; 
+#clicked .off {
+  /* X men default state: hidden */
+  display: none;
 }
 
-#clicked:target .on {  /* hide the hamburger */
-    display: none;
+#clicked:target .on {
+  /* hide the hamburger */
+  display: none;
 }
 
 #clicked:target .off {
-    display: block; /* Show the X */
-    z-index: 2;
-    font-weight: 800;
-    color:chocolate;;
-    font-size: 2em;
+  display: block; /* Show the X */
+  z-index: 2;
+  font-weight: 800;
+  color: chocolate;
+  font-size: 2em;
 }
 /* end toggle on/off */
 
 .hamburger {
-    grid-area: toggle;
-    z-index: 2; /* fix X close Button */
-    justify-content: end;
-    position: relative;
-    display: grid;
+  grid-area: toggle;
+  z-index: 2; /* fix X close Button */
+  justify-content: end;
+  position: relative;
+  display: grid;
 }
 
 header > div.logo {
-    text-align: start;
-} 
-
+  text-align: start;
+}
 
 main {
-    grid-area: main;
-    padding: 25px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas: "section"
+  grid-area: main;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "section"
+    "img"
+    "contact"
     "social";
-  }
+  grid-gap: 1em;
+  justify-items: center;
+}
 
-  .social_icons > ul > li {
-    display: inline;
-  }
+.social_icons > ul > li {
+  display: inline;
+}
 
- main > section > h1 {
-    font-size: 1.5em;
- }
+main > section > h1 {
+  font-size: 1.5em;
+}
 
- main > section > h2 {
-    font-size: 1.25em;
- }
+main > section > h2 {
+  font-size: 1.25em;
+}
 
- main > section > p {
-    font-size: 1em;
- }
+main > section > p {
+  font-size: 1em;
+}
 
- footer {
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas: "logo" "copy" "footer-menu";
-    justify-items: center;
-    padding: 10px;
-  }
+footer {
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: "logo" "copy" "footer-menu";
+  justify-items: center;
+  padding: 10px;
+}
 
-  footer * {
-    margin-bottom: 5px;
-  }
+footer * {
+  margin-bottom: 5px;
+}
