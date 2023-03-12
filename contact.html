@@ -1,125 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" media="screen" />
-    <link
-      rel="stylesheet"
-      href="mobile.css"
-      media="screen and (max-width: 800px)"
-    />
-    <link
-      rel="stylesheet"
-      href="desktop.css"
-      media="screen and (min-width: 800px)"
-    />
-    <script
-      src="https://kit.fontawesome.com/a4ad935168.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Contact Page</title>
-  </head>
-  <body id="clicked">
-    <header>
-      <aside class="logo">
-        <p><a href="index.html">Bogdan's Website.</a></p>
-      </aside>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home.</a></li>
-          <li>
-            <a href="portfolio.html">Portfolio.</a>
-            <ul>
-              <li><a href="index.html">Home.</a></li>
-              <li><a href="index.html">Home.</a></li>
-              <li><a href="index.html">Home.</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact.</a></li>
-          <li><a href="workexperience.html">Work Experience.</a></li>
-          <li><a href="sitereport.html">Site Report.</a></li>
-        </ul>
-      </nav>
-      <div class="button-desktop">
-        <a class="button" href="/portfolio.html">Check Out My Work</a>
-        <a class="button" href="/contact.html">Let's Talk</a>
-      </div>
-      <div class="button-mobile">
-        <a href="portfolio.html"><i class="fa-solid fa-suitcase"></i></a>
-        <a href="/contact.html"><i class="fa-solid fa-address-book"></i></a>
-      </div>
-      <div class="hamburger">
-        <a class="showNav on" href="#clicked"></a>
-        <a class="off" href="#">X</a>
-      </div>
-    </header>
 
-    <main>
-      <section class="hero-left">
-        <form
-          action="mailto:bogdan.burcea22@my.northampton.ac.uk?subject=Contact"
-          method="get"
-        >
-          <label for="subject">Enter your Subject Line</label>
-          <input
-            type="text"
-            name="subject"
-            id="subject"
-            placeholder="please add your subject line..."
-          />
-          <textarea
-            name="body"
-            id="body"
-            placeholder="please add your message..."
-          ></textarea>
-          <input type="submit" value="Submit" />
-        </form>
-      </section>
-      <nav class="social_icons">
-        <ul>
-          <li>
-            <a href="https://github.com/nadgobxe/Web_Development_Assignment"
-              ><i class="fa-brands fa-square-github"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-square-dribbble"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-stack-overflow"></i></a>
-          </li>
-        </ul>
-      </nav>
-      <aside class="hero-right">
-        <img
-          src="/img/contact_hero.png"
-          class="heightImg"
-          alt="Contact Us Illustration"
-        />
-      </aside>
-    </main>
-    <aside class="hero">
-      <p>
-        Enthusiastically learning <i class="fa-brands fa-html5"></i>Web
-        Development, <i class="fa-solid fa-network-wired"></i>Databases, and
-        <i class="fa-solid fa-computer"></i>Computer Systems.
-      </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" media="screen" />
+  <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)" />
+  <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)" />
+  <script src="https://kit.fontawesome.com/a4ad935168.js" crossorigin="anonymous"></script>
+  <title>Contact Page</title>
+</head>
+
+<body id="clicked">
+  <header>
+    <aside class="logo">
+      <p><a href="index.html">Bogdan's Website.</a></p>
     </aside>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home.</a></li>
+        <li>
+          <a href="portfolio.html">Portfolio.</a>
+          <ul>
+            <li><a href="index.html">Home.</a></li>
+            <li><a href="index.html">Home.</a></li>
+            <li><a href="index.html">Home.</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact.</a></li>
+        <li><a href="workexperience.html">Work Experience.</a></li>
+        <li><a href="sitereport.html">Site Report.</a></li>
+      </ul>
+    </nav>
+    <div class="button-desktop">
+      <a class="button" href="/portfolio.html">Check Out My Work</a>
+      <a class="button" href="/contact.html">Let's Talk</a>
+    </div>
+    <div class="button-mobile">
+      <a href="portfolio.html"><i class="fa-solid fa-suitcase"></i></a>
+      <a href="/contact.html"><i class="fa-solid fa-address-book"></i></a>
+    </div>
+    <div class="hamburger">
+      <a class="showNav on" href="#clicked"></a>
+      <a class="off" href="#">X</a>
+    </div>
+  </header>
 
-    <footer>
-      <div class="logo_footer"><h3>Bogdan's Website</h3></div>
-      <div class="copyright">&copy; Bogdan 2023</div>
-      <nav class="footer_menu">
-        <ul>
-          <li><a href="index.html">Home.</a></li>
-          <li><a href="portfolio.html">Portfolio.</a></li>
-          <li><a href="contact.html">Contact.</a></li>
-          <li><a href="workexperience.html">Work Experience.</a></li>
-          <li><a href="sitereport.html">Work Experience.</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
+  <main>
+    <section class="hero-left">
+      <form action="mailto:bogdan.burcea22@my.northampton.ac.uk?subject=Contact" method="get">
+        <label for="subject">Enter your Subject Line</label>
+        <input type="text" name="subject" id="subject" placeholder="please add your subject line..." />
+        <textarea name="body" id="body" placeholder="please add your message..."></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+    <nav class="social_icons">
+      <ul>
+        <li>
+          <a href="https://github.com/nadgobxe/Web_Development_Assignment"><i
+              class="fa-brands fa-square-github"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-square-dribbble"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-stack-overflow"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <aside class="hero-right">
+      <img src="/img/contact_hero.png" class="heightImg" alt="Contact Us Illustration" />
+    </aside>
+  </main>
+  <aside class="hero">
+    <p>
+      Enthusiastically learning <i class="fa-brands fa-html5"></i>Web
+      Development, <i class="fa-solid fa-network-wired"></i>Databases, and
+      <i class="fa-solid fa-computer"></i>Computer Systems.
+    </p>
+  </aside>
+
+  <footer>
+    <div class="logo_footer">
+      <h3>Bogdan's Website</h3>
+    </div>
+    <div class="copyright">&copy; Bogdan 2023</div>
+    <nav class="footer_menu">
+      <ul>
+        <li><a href="index.html">Home.</a></li>
+        <li><a href="portfolio.html">Portfolio.</a></li>
+        <li><a href="contact.html">Contact.</a></li>
+        <li><a href="workexperience.html">Work Experience.</a></li>
+        <li><a href="sitereport.html">Work Experience.</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
 </html>
