@@ -137,3 +137,30 @@ header > nav > ul > li > a:hover {
 }
 
 /* end header settings */
+
+main {
+    grid-template-columns: auto;
+    grid-row: auto;
+    grid-gap: 20px;
+    grid-template-areas: "hero-left" "hero-right" "social";
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .heightImg {
+    max-height: 250px;
+  }
+
+  /* social logo display inline */
+
+main > nav > ul > li {
+    display: inline;
+  }
+
+  /* footer */
+
+footer {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "logo" "copyor" "footer-menu";
+  }

@@ -57,3 +57,33 @@ nav ul li:hover ul li:hover {
   background-color: bisque;
   display: block;
 }
+
+/* end header settings desktop */
+
+/* Main Settings Desktop */
+
+main {
+  grid-template-columns: 75% 20% 5%;
+  grid-row: auto;
+  grid-template-areas: "hero-left hero-right social";
+  justify-items: center;
+  align-items: center;
+}
+
+.heightImg {
+  max-height: 250px;
+}
+
+/* social logo display block */
+
+main > nav > ul > li {
+  display: block;
+}
+
+/* footer */
+
+footer {
+  grid-template-columns: 10% 10% 80%;
+  grid-template-rows: auto;
+  grid-template-areas: "logo copyor footer-menu";
+}
