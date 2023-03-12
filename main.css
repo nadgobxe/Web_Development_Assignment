@@ -158,3 +158,7 @@ footer > nav > ul > li {
   border: 2px solid #040303;
   border-radius: 15px;
 }
+
+.heightImg {
+  max-height: 400px;
+}
