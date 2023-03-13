@@ -61,10 +61,6 @@ header {
   display: grid;
 }
 
-header > aside.logo > p > a {
-  font-size: 2.3125em;
-}
-
 header > nav {
   grid-area: nav;
 }
@@ -182,3 +178,34 @@ main > section > div {
 }
 
 /* end button settings */
+
+/* form settings */
+
+.form {
+  width: auto;
+  display: grid;
+  grid-gap: 1em;
+}
+
+.form-textarea,
+.form-inputText {
+  border: 3px dashed #040303;
+  border-radius: 2em;
+  padding: 2em;
+  box-shadow: 0 10px 30px #04030383;
+  font-size: 1em;
+  width: 25vw;
+  transition: box-shadow 500ms ease-in;
+  margin-bottom: 2em;
+}
+
+.form-textarea:focus,
+.form-inputText:focus {
+  box-shadow: 0 1px 3px #04030383;
+  outline: none;
+}
+
+.form > label {
+  font-weight: 600;
+}
+
