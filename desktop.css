@@ -99,3 +99,17 @@ footer {
   background-position: 5vw;
   background-repeat: no-repeat;
 }
+
+/* Portfolio Settings */
+.grid-card {
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "picture description";
+  grid-template-rows: auto;
+  transition: background-color 500ms ease-in;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-card:hover {
+  background-color: #ffc8002d;
+}

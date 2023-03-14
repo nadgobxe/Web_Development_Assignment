@@ -209,3 +209,45 @@ main > section > div {
   font-weight: 600;
 }
 
+/*end form settings */
+
+/*Portfolio Settings */
+
+.portfolio-grid {
+  display: grid;
+  row-gap: 2.5em;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+}
+
+.grid-card {
+  display: grid;
+  background-color: #0403032d;
+  border-radius: 15px;
+  padding: 1em;
+}
+
+.picture {
+  grid-area: picture;
+}
+
+div.picture > img {
+  max-height: 150px;
+}
+
+.description {
+  grid-area: description;
+}
+
+div.description > *:nth-child(2) > i {
+  padding-right: 5px;
+  font-size: 2em;
+  color: #4d3c02;
+}
+
+div.description > h3:first-child {
+  padding-bottom: 5px;
+  font-weight: 600;
+  text-decoration: underline;
+  letter-spacing: 0.1em;
+}
