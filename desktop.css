@@ -67,11 +67,13 @@ nav ul li:hover ul li:hover {
 /* Main Settings Desktop */
 
 main {
-  grid-template-columns: 75% 20% 5%;
+  grid-template-columns: 70% 20% 5%;
   grid-row: auto;
   grid-template-areas: "hero-left hero-right social";
   justify-items: center;
   align-items: center;
+  grid-gap: 2.5em;
+  overflow:initial;
 }
 
 .heightImg {
@@ -112,4 +114,17 @@ footer {
 
 .grid-card:hover {
   background-color: #ffc8002d;
+}
+
+/* Work Experience Settings */
+
+.workexp-grid {
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: auto;
+  grid-template-areas: "me thead thead thead";
+}
+
+.workdata {
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
 }
