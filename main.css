@@ -251,3 +251,8 @@ div.description > h3:first-child {
   text-decoration: underline;
   letter-spacing: 0.1em;
 }
+
+figcaption {
+  text-align: center;
+  font-weight: 600;
+}
