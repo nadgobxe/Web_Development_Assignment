@@ -73,7 +73,6 @@ main {
   justify-items: center;
   align-items: center;
   grid-gap: 2.5em;
-  overflow: initial;
 }
 
 .heightImg {

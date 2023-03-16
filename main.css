@@ -77,10 +77,12 @@ header {
 
 header > nav {
   grid-area: nav;
+  padding: 5px;
 }
 
 .logo {
   grid-area: logo;
+  padding: 5px;
 }
 
 header nav ul li a {
