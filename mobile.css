@@ -49,19 +49,20 @@ header > div.logo > p > a {
 
 /*mobile menu */
 
-header nav {
+header > nav {
   /* default state: hidden */
   /* display: none; */
   width: 100%;
   max-height: 0;
   background-color: #ffffff;
   z-index: 1; /* fix for social icons menu */
-  transform: translate(150%, 0);
+  transform: translate(200%, 0);
   transition: transform 500ms ease-in, max-height 1000ms ease-in-out;
   border: 1px solid #eef0f2;
   border-radius: 5px;
   padding: 5px;
   box-shadow: 0px 10px 30px #04030321;
+  overflow: hidden;
 }
 
 #clicked:target nav {
